@@ -1,0 +1,15 @@
+Functional Component and State Hook: The component TextForm is defined as a functional component. It utilizes the useState hook from React to manage and update its local state. The state is initialized with the default value "My uppercase text". The settext function is used to update the state value.
+
+Inline Styling: The myStyle constant is an object representing CSS styles. It is used to apply inline styling to elements. The style attribute in JSX is used to apply these styles to the heading element.
+
+Event Handling: Event handling is implemented through various functions like handleUpClick, handleLoClick, clearClick, and handleOnChange. These functions are triggered by click events and input change events, and they perform specific actions when called.
+
+Conditional Rendering: The number of words, characters, and time period is calculated and displayed conditionally based on the current state of the text variable. For example, {text.split(" ").length} words shows the word count only when there is text entered in the textarea.
+
+Two-Way Data Binding: The textarea element has its value attribute set to the text state variable. This creates a two-way data binding, where changes to the textarea value are reflected in the text state, and vice versa.
+
+Props: The component TextForm accepts a heading prop which is used to display the heading passed from its parent component.
+
+Component Composition: The TextForm component is composed of multiple elements and components, which are combined to create the final UI.
+
+Array Manipulation: In calculating the number of words in the text, the split() method is used to convert the text into an array of words, and the length property of that array is used to get the word count.
